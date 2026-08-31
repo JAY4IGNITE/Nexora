@@ -8,12 +8,17 @@ class Settings(BaseSettings):
     
     # Environment placeholders
     SUPABASE_URL: Optional[str] = None
+    SUPABASE_SERVICE_ROLE_KEY: Optional[str] = None
     REDIS_URL: Optional[str] = None
     QDRANT_URL: Optional[str] = None
     
     FIREBASE_PROJECT_ID: Optional[str] = None
     FIREBASE_CLIENT_EMAIL: Optional[str] = None
     FIREBASE_PRIVATE_KEY: Optional[str] = None
+    
+    # Adzuna API
+    ADZUNA_APP_ID: Optional[str] = None
+    ADZUNA_APP_KEY: Optional[str] = None
     
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
