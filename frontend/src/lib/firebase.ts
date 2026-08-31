@@ -22,5 +22,5 @@ export const auth = isMock
   : getAuth(app);
 
 export const onAuthStateChanged = isMock
-  ? (authObj: any, cb: any) => { cb(null); return () => {}; }
+  ? (_authObj: any, cb: any) => { cb(null); return () => {}; }
   : firebaseOnAuthStateChanged;
