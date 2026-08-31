@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom"
-import { LayoutDashboard, Users, BookOpen, Map, Settings, Briefcase, GraduationCap, Bot } from "lucide-react"
+import { LayoutDashboard, Users, BookOpen, Map, Settings, Briefcase, GraduationCap, Bot, LogOut } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { useAuth } from "@/contexts/AuthContext"
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
@@ -15,6 +16,8 @@ const navigation = [
 ]
 
 export default function Sidebar() {
+  const { role, logout, profile } = useAuth();
+
   return (
     <aside className="w-64 border-r bg-card hidden md:flex flex-col">
       <div className="h-16 flex items-center px-6 border-b">
@@ -39,6 +42,19 @@ export default function Sidebar() {
           </NavLink>
         ))}
       </nav>
+      <div className="p-4 border-t space-y-2">
+        <div className="px-3 py-2 text-sm">
+          <p className="font-medium truncate">{profile?.email}</p>
+          <p className="text-xs text-muted-foreground">{role}</p>
+        </div>
+        <button
+          onClick={() => logout()}
+          className="flex w-full items-center gap-3 px-3 py-2 rounded-md text-sm font-medium transition-colors text-muted-foreground hover:bg-destructive hover:text-destructive-foreground"
+        >
+          <LogOut className="w-4 h-4" />
+          Sign Out
+        </button>
+      </div>
     </aside>
   )
 }

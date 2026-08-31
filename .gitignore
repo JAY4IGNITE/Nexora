@@ -49,3 +49,20 @@ coverage.xml
 
 # pytest
 .pytest_cache/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Supabase
+supabase/.temp/
+supabase/.branches/
+
+# Vite / Frontend build tools
+dist-ssr/
+*.local
+
+# macOS
+.DS_Store

@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { User as FirebaseUser, onAuthStateChanged, signOut as firebaseSignOut } from 'firebase/auth';
-import { auth } from '@/lib/firebase';
+import { User as FirebaseUser, signOut as firebaseSignOut } from 'firebase/auth';
+import { auth, onAuthStateChanged } from '@/lib/firebase';
 
 export type UserRole = 'ADMIN' | 'GOVERNMENT' | 'INSTITUTION' | 'TRAINER' | 'EMPLOYER' | 'STUDENT';
 

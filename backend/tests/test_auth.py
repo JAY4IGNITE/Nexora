@@ -23,7 +23,7 @@ def mock_create_user():
 
 def test_read_users_me_missing_token():
     response = client.get("/api/v1/auth/me")
-    assert response.status_code == 403 # HTTPBearer missing token returns 403
+    assert response.status_code == 401 # HTTPBearer missing token returns 401
 
 def test_read_users_me_invalid_token(mock_verify_token):
     from firebase_admin import auth
