@@ -1,0 +1,30 @@
+AICTE Model Curriculum for UG Degree Course in Computer Science and Engineering
+30
+SEMESTER I
+BSC-101 Physics-I 3L:1T:2P 5 Credits
+Course Objective:
+To enhance the fundamental knowledge in Physics and its applications relevant to various streams of
+Engineering and Technology.
+Module I: Electrostatics in vacuum
+Calculation of electric field and electrostatic potential for a charge distribution; Divergence and curl
+of electrostatic field; Laplace’s and Poisson’s equations for electrostatic potential and uniqueness of
+their solution and connection with steady state diffusion and thermal conduction; Practical examples
+like Faraday’s cage and coffee-ring effect; Boundary conditions of electric field and electrostatic
+potential; method of images; energy of a charge distribution and its expression in terms of electric
+field.
+
+==Start of OCR for page 38==
+BS-102 Mathematics-I 3L:1T:0P 4 Credits
+Course Objectives:
+The goal of this course is to achieve conceptual understanding and to retain the best traditions of
+traditional calculus. The syllabus is designed to provide the basic tools of calculus mainly for the
+purpose of modelling the engineering problems mathematically and obtaining solutions.
+Course Contents:
+Module 1: Basic Calculus: (6 hours)
+Curvature, evolutes and involutes; Evaluation of definite and improper integrals; Beta and Gamma
+functions and their properties; Applications of definite integrals to evaluate surface areas and volumes
+of revolutions.
+Course outcomes: The objective of this course is to familiarize the prospective engineers with
+techniques in calculus, multivariate differentiation and integration.
+The students will learn
+• To apply differential and integral calculus to notions of curvature and to improper integrals.

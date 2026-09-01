@@ -7,6 +7,7 @@ import ForgotPassword from "./pages/auth/ForgotPassword"
 import { AuthProvider } from "./contexts/AuthContext"
 import ProtectedRoute from "./components/auth/ProtectedRoute"
 import LabourMarket from "./pages/admin/LabourMarket"
+import CurriculumIntelligence from "./pages/admin/CurriculumIntelligence"
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               {/* Future specialized routes with role protection */}
               <Route element={<ProtectedRoute allowedRoles={['ADMIN', 'GOVERNMENT']} />}>
                 <Route path="labour-market" element={<LabourMarket />} />
+                <Route path="curriculum-intelligence" element={<CurriculumIntelligence />} />
                 <Route path="districts" element={<Placeholder title="District Intelligence" />} />
               </Route>
               
