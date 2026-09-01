@@ -5,11 +5,13 @@ import io
 import PyPDF2
 import logging
 
+import logging
+
 from app.api.deps import get_current_user
-from app.services.database import get_supabase_client
+from app.core.supabase import get_supabase_client
 from app.services.storage.r2_client import r2_storage
 from app.ai.agents.registry import AgentRegistry
-from app.ai.schemas.skill import SkillAgentInput
+from app.ai.agents.skill_agent import SkillAgentInput
 
 logger = logging.getLogger(__name__)
 router = APIRouter()

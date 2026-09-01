@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from app.ai.agents.base import BaseAgent
 from app.ai.agents.registry import register_agent
 from app.ai.schemas.skill import SkillExtractionResponse
-from app.services.database import get_supabase_client
+from app.core.supabase import get_supabase_client
 
 logger = logging.getLogger(__name__)
 
